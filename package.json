@@ -1,0 +1,51 @@
+{
+  "name": "agent-harness-kit",
+  "version": "0.1.0",
+  "description": "Reusable repository harness scaffold for AI-assisted software development across Codex, Claude, and spec-driven workflows",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "pm": "node scripts/codex-pm.mjs",
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "review:checkpoint": "./scripts/run-codex-review-checkpoint.sh",
+    "preflight": "./scripts/run-agent-preflight.sh",
+    "smoke": "./scripts/run-cli-smoke.sh",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage --no-file-parallelism",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "agent",
+    "harness",
+    "codex",
+    "claude",
+    "openspec",
+    "superpowers",
+    "scaffold"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarnessHub/AgentHarnessKit.git"
+  },
+  "homepage": "https://github.com/HarnessHub/AgentHarnessKit#readme",
+  "bugs": {
+    "url": "https://github.com/HarnessHub/AgentHarnessKit/issues"
+  },
+  "author": "HarnessHub",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.0"
+  }
+}

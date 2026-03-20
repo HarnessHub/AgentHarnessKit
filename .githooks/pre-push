@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+
+if [[ ! -f "$repo_root/.codex-review" ]]; then
+  cat <<'EOF'
+Push blocked: missing .codex-review
+
+Run:
+  ./scripts/run-codex-review-checkpoint.sh
+EOF
+  exit 1
+fi
+
+if [[ ! -f "$repo_root/.codex-review-proof" ]]; then
+  cat <<'EOF'
+Push blocked: missing .codex-review-proof
+
+Run:
+  ./scripts/run-codex-review-checkpoint.sh
+EOF
+  exit 1
+fi
+
+echo "Pre-push review files present."
