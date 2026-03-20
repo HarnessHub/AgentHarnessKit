@@ -3,7 +3,7 @@ type: task
 epic: harness-migration
 slug: agent-entrypoint-guidance
 title: Clarify agent-driven workflow entrypoint in AGENTS.md
-status: in_progress
+status: done
 task_type: docs
 issue: 15
 state_path: .codex/pm/issue-state/15-agent-entrypoint-guidance.md
