@@ -1,19 +1,32 @@
-# Issue #1: Support safe private local overlays for OpenPrecedent-style integrations
+---
+type: issue_state
+issue: 1
+task: .codex/pm/tasks/private-overlay-support/support-safe-private-local-overlays-for-openprecedent-style-integrations.md
+title: Support safe private local overlays for OpenPrecedent-style integrations
+status: done
+delivery_stage: pr_opened
+branch: issue-1-private-local-overlays
+pr: https://github.com/HarnessHub/AgentHarnessKit/pull/2
+---
 
-Date: 2026-03-20
+## Summary
 
-## Status
+Keep the shared repository surface generic while allowing the current local clone to load OpenPrecedent privately through `.agents.local.md`.
 
-`pr_opened`
+## Validated Facts
 
-## Branch
+- `.agents.local.md` remains local-only and ignored by Git
+- shared repository guidance does not make OpenPrecedent a tracked dependency
 
-`issue-1-private-local-overlays`
+## Open Questions
 
-## Notes
+- none
 
-This issue keeps the shared repository surface generic while allowing the current local clone to load OpenPrecedent privately through `.agents.local.md`.
+## Next Steps
 
-## Pull Request
+- none
 
-`https://github.com/HarnessHub/AgentHarnessKit/pull/2`
+## Artifacts
+
+- `.agents.local.md`
+- `AGENTS.md`
