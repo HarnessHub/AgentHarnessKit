@@ -4,7 +4,7 @@ Date: 2026-03-20
 
 ## Status
 
-`in_progress`
+`pr_opened`
 
 ## Branch
 
@@ -13,3 +13,7 @@ Date: 2026-03-20
 ## Notes
 
 This issue keeps the shared repository surface generic while allowing the current local clone to load OpenPrecedent privately through `.agents.local.md`.
+
+## Pull Request
+
+`https://github.com/HarnessHub/AgentHarnessKit/pull/2`
