@@ -3,8 +3,8 @@ type: issue_state
 issue: 15
 task: .codex/pm/tasks/harness-migration/agent-entrypoint-guidance.md
 title: Clarify agent-driven workflow entrypoint in AGENTS.md
-status: in_progress
-delivery_stage: implementing
+status: done
+delivery_stage: ready_to_deliver
 ---
 
 ## Summary
