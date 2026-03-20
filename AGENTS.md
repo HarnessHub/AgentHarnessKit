@@ -4,6 +4,8 @@ This file provides shared instructions to AI coding agents working in this repos
 
 If a local-only `.agents.local.md` file exists in the repository root, agents should apply it as a private overlay for the current clone. Shared repository rules in this file still take precedence.
 
+Keep `.agents.local.md` private to the local clone. Do not commit repository-specific local overlays or use them to introduce public hard dependencies for optional local tooling.
+
 ## What is AgentHarnessKit?
 
 AgentHarnessKit is a reusable repository harness scaffold for AI-assisted development.

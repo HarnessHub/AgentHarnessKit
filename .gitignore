@@ -15,6 +15,7 @@ Thumbs.db
 # Environment
 .env
 .env.*
+.agents.local.md
 .codex-review
 .codex-review-proof
 .artifacts/
